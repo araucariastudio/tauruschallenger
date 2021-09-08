@@ -6,7 +6,7 @@ var score
 
 func _ready():
 	randomize()
-	new_game()
+	$HUD.show_main_menu()
 
 
 func game_over():
