@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spaceship.png-a5569dfb091b23189b3e552e35eb2ad0.stex"
+path="res://.import/enemypurple2.png-91258f9f01713f3dbcf7b967dbd15ffb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dodge_assets/art/spaceship.png"
-dest_files=[ "res://.import/spaceship.png-a5569dfb091b23189b3e552e35eb2ad0.stex" ]
+source_file="res://assets/art/enemypurple2.png"
+dest_files=[ "res://.import/enemypurple2.png-91258f9f01713f3dbcf7b967dbd15ffb.stex" ]
 
 [params]
 

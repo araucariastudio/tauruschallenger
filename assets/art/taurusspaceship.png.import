@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/enemyWalking_1.png-d5ceaabc18541872d02c2adc056b0eb2.stex"
+path="res://.import/taurusspaceship.png-906928ee76e2df442f5c6d20ac002d32.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dodge_assets/art/enemyWalking_1.png"
-dest_files=[ "res://.import/enemyWalking_1.png-d5ceaabc18541872d02c2adc056b0eb2.stex" ]
+source_file="res://assets/art/taurusspaceship.png"
+dest_files=[ "res://.import/taurusspaceship.png-906928ee76e2df442f5c6d20ac002d32.stex" ]
 
 [params]
 

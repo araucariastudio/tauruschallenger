@@ -4,30 +4,38 @@ signal hit
 
 export var speed = 400
 var screen_size
+var target = Vector2()
 
 
 func _ready():
 	screen_size = get_viewport_rect().size
 	hide()
 	
+func _input(event):
+	if event is InputEventScreenTouch and event.pressed:
+		target = event.position
+	
 func _process(delta):
 	
 	var velocity = Vector2()
 	
-	if Input.is_action_pressed("ui_right"):
-		velocity.x += 1
-		
-	if Input.is_action_pressed("ui_left"):
-		velocity.x -= 1
-		
-	if Input.is_action_pressed("ui_down"):
-		velocity.y += 1
-		
-	if Input.is_action_pressed("ui_up"):
-		velocity.y -= 1
-		
-	if velocity.length() > 0:
-		
+	if OS.has_touchscreen_ui_hint():
+		if position.distance_to(target) > 10:
+			velocity = target - position
+	else:
+		if Input.is_action_pressed("ui_right"):
+			velocity.x += 1
+			
+		if Input.is_action_pressed("ui_left"):
+			velocity.x -= 1
+			
+		if Input.is_action_pressed("ui_down"):
+			velocity.y += 1
+			
+		if Input.is_action_pressed("ui_up"):
+			velocity.y -= 1
+			
+	if velocity.length() > 0:	
 		velocity = velocity.normalized() * speed
 		$AnimatedSprite.play()
 	else:
@@ -51,5 +59,6 @@ func _on_Player_body_entered(body):
 	
 func start(pos):
 	position = pos
+	target = pos
 	show()
 	$CollisionShape2D.disabled = false

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/enemy2.png-1cdf721c2c6ec6b3dd83ec246fbd59a4.stex"
+path="res://.import/enemypurple.png-fe364f0d678f7b6dfe7c00058ba61e82.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dodge_assets/art/enemy2.png"
-dest_files=[ "res://.import/enemy2.png-1cdf721c2c6ec6b3dd83ec246fbd59a4.stex" ]
+source_file="res://assets/art/enemypurple.png"
+dest_files=[ "res://.import/enemypurple.png-fe364f0d678f7b6dfe7c00058ba61e82.stex" ]
 
 [params]
 
